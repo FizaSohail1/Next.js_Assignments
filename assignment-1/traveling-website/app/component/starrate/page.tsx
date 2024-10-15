@@ -2,9 +2,13 @@ import React from 'react';
 import { FaStar } from "react-icons/fa";
 import styles from '../../page.module.css'; 
 
-interface StarRatesProps {
+type StarRatesProps = {
   ratings: number;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1b155cb3654070e67539e29fb80d44b3383203b1
 function StarRates({ ratings }: StarRatesProps) {
   const totalStars = 5;
 
@@ -20,5 +24,9 @@ function StarRates({ ratings }: StarRatesProps) {
   );
 }
 
+<<<<<<< HEAD
 
 export default StarRates;
+=======
+export default StarRates
+>>>>>>> 1b155cb3654070e67539e29fb80d44b3383203b1
