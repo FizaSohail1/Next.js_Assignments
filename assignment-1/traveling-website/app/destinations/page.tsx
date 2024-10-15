@@ -29,7 +29,7 @@ function Destinations() {
       price: '$7.5K', 
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ducimus, similique.' 
     },
-        { 
+    { 
       image: '/Tokyo.jpg', 
       title: 'Tokyo, Japan', 
       price: '$17.5K', 
@@ -53,7 +53,6 @@ function Destinations() {
       price: '$10.2K', 
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ducimus, similique.' 
     },
-
   ];
 
   const placesData = [
@@ -87,7 +86,6 @@ function Destinations() {
       rating: 5, 
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ducimus, similique.' 
     }
-
   ];
 
   return (
@@ -98,8 +96,8 @@ function Destinations() {
           <p className={styles['secondSection-p']}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, perferendis. Maxime alias quia numquam sit vitae, optio omnis neque! Reprehenderit maxime ipsam sunt?</p>
         </div>
         <div className={styles.destinations}>
-          {destinationsData.map((destination) => (
-            <div>
+          {destinationsData.map((destination, index) => (
+            <div key={index}>
               <Image
                 src={destination.image}
                 alt=''
@@ -123,8 +121,8 @@ function Destinations() {
           <p className={styles['secondSection-p']}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, perferendis. Maxime alias quia numquam sit vitae, optio omnis neque! Reprehenderit maxime ipsam sunt?</p>
         </div>
         <div className={styles.places}>
-          {placesData.map((place) => (
-            <div className={styles['places-card']}>
+          {placesData.map((place, index) => (
+            <div className={styles['places-card']} key={index}>
               <Image
                 src={place.image}
                 alt={place.name}

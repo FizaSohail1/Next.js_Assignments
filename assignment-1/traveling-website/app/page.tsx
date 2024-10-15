@@ -66,8 +66,8 @@ export default function Home() {
           <p className={styles['secondSection-p']}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, perferendis. Maxime alias quia numquam sit vitae, optio omnis neque! Reprehenderit maxime ipsam sunt?</p>
         </div>
         <div className={styles.destinations}>
-          {destinationsData.map((destination) => (
-            <div>
+          {destinationsData.map((destination, index) => (
+            <div key={index}>
               <Image
                 src={destination.image}
                 alt=''

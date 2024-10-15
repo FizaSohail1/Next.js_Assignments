@@ -7,7 +7,7 @@ function contact() {
       <div className={styles["contact-us-container"]}>
         <div className={styles["contact-us-content"]}>
           <h1>Contact Us</h1>
-          <p>If you have any questions, feel free to reach out. We're here to help!</p>
+          <p>If you have any questions, feel free to reach out. We are here to help!</p>
 
           <div className={styles["contact-info"]}>
             <p><strong>Email:</strong> support@example.com</p>
