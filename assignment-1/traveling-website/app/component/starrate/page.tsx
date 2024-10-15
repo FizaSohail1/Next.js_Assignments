@@ -5,8 +5,7 @@ import styles from '../../page.module.css';
 interface StarRatesProps {
   ratings: number;
 }
-
-function StarRates({ ratings}:StarRatesProps) {
+function StarRates({ ratings }: StarRatesProps) {
   const totalStars = 5;
 
   return (
@@ -20,5 +19,6 @@ function StarRates({ ratings}:StarRatesProps) {
     </>
   );
 }
+
 
 export default StarRates;
