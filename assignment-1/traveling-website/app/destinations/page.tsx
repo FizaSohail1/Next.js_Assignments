@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './destination.module.css';
-import { StarRates } from '../component/starrate/page';
+import { StarRates } from '../component/starrate/StarRate';
 
 function Destinations() {
   const destinationsData = [
