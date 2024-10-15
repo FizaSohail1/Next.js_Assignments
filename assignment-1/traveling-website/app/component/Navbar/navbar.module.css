@@ -1,0 +1,145 @@
+.navigation {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .logo {
+    font-size: 25px;
+    margin-left: 25px;
+    color: black; 
+    display: flex; 
+    align-items: center;
+  }
+  
+  .nav-items {
+    display: none;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    background: rgb(255, 255, 255); 
+    width: 100%;
+    margin-left: 15%;
+    z-index: 1;
+  }
+  
+  .nav-items.show {
+    display: block; 
+  }
+  
+  .ulList {
+    list-style: none;
+    display: block;
+    padding: 10px;
+  }
+  
+  .list {
+    margin: 15px 12px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .list a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  
+  .list a:hover {
+    cursor: pointer;
+  }
+  
+  .topbtn {
+    display: block;
+    background-color: rgb(19, 19, 17);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin-left: 12px;
+    margin-bottom: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .topbtn a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .topbtn:hover {
+    background-color: rgb(57, 57, 58);
+  }
+  
+  .icon {
+    font-size: 25px;
+    margin-right: 5%;
+  }
+  
+  @media (min-width: 768px) {
+    .icon {
+      display: none;
+    }
+  
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+    }
+  
+    .logo {
+      color: rgb(0, 0, 0);
+      font-size: 25px;
+      margin-left: 15px;
+    }
+  
+    .nav-items {
+      display: flex;
+      position: static; 
+      top: 8%;
+      margin: 0 auto;
+    }
+  
+    .ulList {
+      display: flex;
+      list-style: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .list {
+      color: rgb(26, 26, 26);
+      font-size: 16px;
+      margin: 0 10px;
+    }
+  
+    .topbtn {
+      font-size: 13px;
+      margin-top: 15px;
+      margin-right: 12%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .navigation {
+      padding: 0 6%;
+      justify-content: space-between; 
+    }
+  
+    .ulList {
+      gap: 30px;
+    }
+  
+    .list {
+      margin-left: 0;
+    }
+  
+    .nav-items {
+      align-items: center;
+      justify-content: center;
+      margin-right: 0;
+    }
+  }
+  

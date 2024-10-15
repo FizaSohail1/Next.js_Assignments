@@ -1,0 +1,127 @@
+.desSection {
+  padding: 50px;
+  color: #333333;
+}
+.Section{
+  text-align: center;
+}
+.secondSection-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2b2a2a;
+  margin-bottom: 20px;
+  border-bottom: 5px solid yellow;
+  padding-bottom: 5px;
+  display:inline-block;   
+}
+  
+.secondSection-p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.destinations{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.destinations-h3{
+  margin-top: 12px;
+  margin-left: 5px;
+}
+.destinations-img {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover
+}
+.destinations-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);  
+}
+.destinations-p{
+  font-size: 1.2rem;
+  color: #2b2a2a;
+  margin-top: 10px;
+  max-width: 300px;
+  margin-bottom: 3%;
+}
+.card-info{
+  display: flex;
+  justify-content: space-between;
+}
+.card-info-p{
+    font-size: 1.2rem;
+    color: #2b2a2a;
+    margin-top: 12px;
+    margin-right: 25px;
+}
+.places{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.placesHeading{
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2b2a2a;
+  margin-bottom: 20px;
+  border-bottom: 5px solid yellow;
+  padding-bottom: 5px;
+  display:inline-block;   
+}
+.places-card{
+    max-width: 400px;
+    background-color: rgba(219, 219, 219, 0.867);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+.places-img{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+}
+.places-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);  
+}
+.places-h3{
+  margin-top: 12px;
+  margin-left: 15px;
+}
+.places-p{
+  font-size: 1.2rem;
+  color: #2b2a2a;
+  margin:10px 15px;
+}
+
+@media(min-width: 768px){
+  .destinations{
+  gap: 30px;
+ }
+ .placesHeading{
+  font-size: 2.5rem;
+}
+}
+@media(min-width: 1024px){
+  .destinations{
+    justify-content: space-around;
+    gap: 10px;
+  }
+  .places{
+   justify-content: flex-start;
+  }
+}

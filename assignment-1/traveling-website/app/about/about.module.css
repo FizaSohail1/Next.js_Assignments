@@ -1,0 +1,108 @@
+.About-us {
+  padding: 50px;
+}
+
+.container {
+  display: block; 
+  max-width: 1200px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px auto;
+  gap: 20px; 
+}
+
+.image img{
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #383737;
+  border-bottom: 5px solid yellow;
+  padding-bottom: 5px;
+  display:inline-block;
+}
+
+.content p {
+  font-size: 1.2rem;
+  color: #4d4c4c;
+  margin-bottom: 10px;
+  max-width: 600px;
+}
+.heading{
+  text-align: center;
+  margin-top: 10%;
+}
+.heading h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2b2a2a;
+  margin-bottom: 20px;
+  border-bottom: 5px solid yellow;
+  padding-bottom: 5px;
+  display:inline-block;
+ 
+}
+.BookTicket-form {
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.BookTicket-form label {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+.BookTicket-form input{
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.BookTicket-form select {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.BookTicket-form button {
+  padding: 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: #f0e338;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.BookTicket-form button:hover {
+  background-color: #fffb00;
+}
+
+
+@media (min-width:768px) {
+  .container{
+    display: flex;
+  }
+  .image img {
+      margin-top: 0px;
+  }
+}
