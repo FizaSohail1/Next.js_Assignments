@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import mainImg from "../public/main.jpg";
-import StarRates from "./component/starrate/page";
+import {StarRates} from "./component/starrate/page";
 import Link from "next/link";
 
 export default function Home() {
