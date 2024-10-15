@@ -2,7 +2,7 @@ import React from 'react';
 import { FaStar } from "react-icons/fa";
 import styles from '../../page.module.css'; 
 
-interface StarRatesProps {
+type StarRatesProps = {
   ratings: number;
 }
 
