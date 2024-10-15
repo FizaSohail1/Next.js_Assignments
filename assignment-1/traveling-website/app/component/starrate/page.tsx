@@ -6,7 +6,7 @@ interface StarRatesProps {
   ratings: number;
 }
 
- export const StarRates: React.FC<StarRatesProps> = ({ratings}) => {
+ export const StarRates = ({ratings}:StarRatesProps) => {
   const totalStars = 5;
 
   return (
