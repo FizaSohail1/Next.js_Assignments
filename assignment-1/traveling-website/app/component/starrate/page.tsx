@@ -6,7 +6,7 @@ interface StarRatesProps {
   ratings: number;
 }
 
-export default function StarRates({ ratings }: StarRatesProps) {
+function StarRates({ ratings}:StarRatesProps) {
   const totalStars = 5;
 
   return (
@@ -20,3 +20,5 @@ export default function StarRates({ ratings }: StarRatesProps) {
     </>
   );
 }
+
+export default StarRates;
