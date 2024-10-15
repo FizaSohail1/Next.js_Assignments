@@ -2,11 +2,11 @@ import React from 'react';
 import { FaStar } from "react-icons/fa";
 import styles from '../../page.module.css'; 
 
-type StarRatesProps = {
+interface StarRatesProps {
   ratings: number;
 }
 
-function StarRates({ ratings }: StarRatesProps) {
+const StarRates: React.FC<StarRatesProps> = ({ratings}) => {
   const totalStars = 5;
 
   return (
