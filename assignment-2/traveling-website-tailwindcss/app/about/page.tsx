@@ -12,9 +12,9 @@ function About() {
       <div className="max-w-lg">
         <h1 className="text-4xl mb-5 text-gray-800 font-bold border-b-4 border-yellow-400 inline-block pb-1">About Us</h1>
         <p className="text-md text-gray-600 mb-5">
-          At Our Website, we are passionate about helping you discover the world's most stunning destinations. Whether you are a beach lover, an adventure seeker, or a culture enthusiast, our mission is to guide you toward unforgettable experiences in the most beautiful corners of the globe.<br/><br/>
+          At Our Website, we are passionate about helping you discover the worlds most stunning destinations. Whether you are a beach lover, an adventure seeker, or a culture enthusiast, our mission is to guide you toward unforgettable experiences in the most beautiful corners of the globe.<br/><br/>
           Founded by a team of avid travelers, our website is designed to be your go-to resource for expert travel advice, breathtaking destinations, and must-see hidden gems. We provide insider tips, curated itineraries, and travel inspiration to help you make the most of every journey.<br/><br/>
-          Let us be your travel companion as you explore new horizons, immerse yourself in different cultures, and create memories that will last a lifetime. Your next adventure awaits—start planning with us today.</p>
+          Let us be your travel companion as you explore new horizons, immerse yourself in different cultures, and create memories that will last a lifetime. Your next adventure awaits start planning with us today.</p>
       </div>
       <div>
         <Image
