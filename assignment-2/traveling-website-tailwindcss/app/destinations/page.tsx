@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import  StarRates  from '../components/StarRate/page';
+import StarRates from '../components/StarRate/starRate' ;
 
 function Destinations() {
   const destinationsData = [

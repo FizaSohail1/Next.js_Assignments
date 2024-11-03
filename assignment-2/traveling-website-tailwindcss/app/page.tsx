@@ -1,7 +1,7 @@
 import Image from "next/image";
 import mainImg from "../public/main.jpg";
-import  StarRates  from "./components/StarRate/page";
 import Link from "next/link";
+import StarRates from "./components/StarRate/starRate";
 
 export default function Home() {
   const destinationsData = [
