@@ -1,6 +1,6 @@
 import Image from "next/image";
 import mainImg from "../public/main.jpg";
-import { StarRates } from "./components/StarRate/page";
+import  StarRates  from "./components/StarRate/page";
 import Link from "next/link";
 
 export default function Home() {

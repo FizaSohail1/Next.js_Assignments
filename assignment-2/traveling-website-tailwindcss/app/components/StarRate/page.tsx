@@ -5,7 +5,7 @@ interface StarRatesProps {
   ratings: number;
 }
 
-export const StarRates = ({ ratings }: StarRatesProps) => {
+const StarRates = ({ ratings }: StarRatesProps) => {
   const totalStars = 5;
 
   return (
@@ -16,3 +16,4 @@ export const StarRates = ({ ratings }: StarRatesProps) => {
     </div>
   );
 };
+export default StarRates
