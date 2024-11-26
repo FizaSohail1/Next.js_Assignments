@@ -24,7 +24,7 @@ function About() {
           </p>
           <h2 className="text-3xl font-semibold text-gray-800 mb-4">Our Mission</h2>
           <p className="text-gray-600 mb-6 leading-relaxed">
-            Our mission is to celebrate the love for food by connecting people to flavors, traditions, and the joy of cooking. Whether you're a seasoned chef or a food enthusiast, we provide content that nourishes both your stomach and your soul.
+            Our mission is to celebrate the love for food by connecting people to flavors, traditions, and the joy of cooking. Whether you are a seasoned chef or a food enthusiast, we provide content that nourishes both your stomach and your soul.
           </p>
          <Link href='/blogs'>
          <button className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-600 transition duration-300">

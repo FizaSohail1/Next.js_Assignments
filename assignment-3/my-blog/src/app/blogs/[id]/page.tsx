@@ -1,6 +1,7 @@
 import Footer from "@/app/components/Footer/page";
 import Navbar from "@/app/components/Navbar/page";
 import Comments from "@/app/components/comments/page";
+import Image from "next/image";
 
 interface Blog {
   id: string;
@@ -126,7 +127,7 @@ async function BlogPost({ params }: BlogPostParams) {
 
         {parseInt(blog.id) >= 10 && (
           <div>
-            <img
+            <Image
               src={blog.image}
               alt={blog.title}
               className=" h-[300px] w-[900px] md:h-[400px] lg:h-[500px] lg:w-[1000px] shadow-md mb-6 lg:mb-10 object-cover mx-auto"
