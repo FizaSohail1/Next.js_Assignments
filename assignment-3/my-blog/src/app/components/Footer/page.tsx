@@ -1,6 +1,7 @@
 import React from 'react'
 import { Irish_Grover } from 'next/font/google';
 import { FaFacebook, FaInstagram, FaPinterest, FaTwitter } from 'react-icons/fa';
+import Link from 'next/link';
 
 
 const irishGrover = Irish_Grover({
@@ -29,17 +30,17 @@ function Footer() {
       <div className="links block ">
         <h2 className='font-bold text-xl my-3'>Categoriese</h2>
         <ul className='text-gray-200 text-md ' >
-            <li className='inline'>Traditional Foods</li>
-            <li className='my-2'>Sweets & Deserts</li>
-            <li>Snacks</li>
+            <li className='inline'><Link href={'/blogs#category'}>Traditional Foods</Link></li>
+            <li className='my-2'><Link href={'/blogs#category'}>Sweets & Deserts</Link></li>
+            <li><Link href={'/blogs#category'}>Snacks</Link></li>
         </ul> 
        </div>
        <div className="links block ">
         <h2 className='font-bold text-xl my-3 '>Quick Links</h2>
         <ul className='text-gray-200 text-md ' >
-            <li className='inline'>Home</li>
-            <li>Blogs</li>
-            <li>About Us</li>
+          <li> <Link href={'/'} className='inline cursor-pointer'>Home</Link></li>
+           <li><Link href={'/blogs'} className='inline cursor-pointer '>Blog</Link></li>
+           <li><Link href={'/about'} className='inline cursor-pointer '>About</Link></li>
         </ul> 
        </div>
       </div>

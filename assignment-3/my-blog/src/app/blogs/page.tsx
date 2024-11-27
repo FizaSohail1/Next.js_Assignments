@@ -140,6 +140,7 @@ function Blog() {
               src={"/blogmain.jpg"}
               alt="main1"
               className="h-[500px] w-full object-cover"
+              width={200} height={100}
             />
           </div>
           <div className="bg-gray-200 h-[430px] w-[300px] my-10 mx-1 md:mx-4">
@@ -147,6 +148,7 @@ function Blog() {
               src="/blog-2.jpg"
               alt="main2"
               className="h-[430px] object-cover"
+              width={300} height={100}
             />
           </div>
           <div className="bg-gray-200 h-[500px] w-[300px] lg:w-[400px] mx-1 md:mx-4">
@@ -154,12 +156,13 @@ function Blog() {
               src={"/blog-1.jpg"}
               alt="main1"
               className="h-[500px] w-full object-cover"
+              width={200} height={100}
             />
           </div>
         </div>
       </div>
 
-      <div className="">
+      <div id="category">
         <h1 className={`${irishGrover.className} text-3xl md:text-5xl md:mx-auto text-center mt-10 md:mt-16 py-2`}>
           Explore Our Categoriese
         </h1>

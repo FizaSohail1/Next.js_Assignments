@@ -102,12 +102,12 @@ export default function Home() {
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
     {
       [
-        { id:'1' , title: "Traditional Dishes",image:"/food-2.jpg", description:"Discover the authentic flavors of traditional Pakistani cuisine."},
-        { id: "2", title: "Snack and Sizzle", image: "/snack-1.jfif", description: " Explore popular street snacks that are a part of everyday life."},
+        { id:'1' , title: "Traditional Dishes",image:"/traditional-2.jpg", description:"Discover the authentic flavors of traditional Pakistani cuisine."},
+        { id: "2", title: "Snack and Sizzle", image: "/streetFood-3.jpg", description: " Explore popular street snacks that are a part of everyday life."},
         { id: "3", title: "Sweets & Desserts", image: "/sweet-1.jpg", description: " Indulge in the sweetness of traditional Pakistani desserts."}
       ].map((category) => (
         <div key={category.id} className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
-        <Image src={category.image} alt="Traditional Dishes" className="w-full h-[200px] object-cover" />
+        <Image src={category.image} alt="Traditional Dishes" className="w-full h-[200px] object-cover" width={300} height={100} />
         <div className="p-4">
           <h3 className="text-xl font-semibold mb-2">{category.title}</h3>
           <p className="text-gray-600 text-sm">
@@ -147,7 +147,7 @@ export default function Home() {
           { id:"12", title: "Top 3 Traditional Pakistani Foods You Must Try", image: "/street-food.jpg", description: "Pakistani cuisine is a flavorful journey of rich spices, aromatic herbs, and vibrant colors."},
         ].map((item) => (
           <div key={item.id} className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105  lg:w-[350px] ">
-        <Image src={item.image} alt="Organic and Healthy" className="w-full h-[130px] object-cover" />
+        <Image src={item.image} alt="Organic and Healthy" className="w-full h-[130px] object-cover" width={300} height={100}/>
         <div className="p-4">
           <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
           <p className="text-gray-600 text-sm">

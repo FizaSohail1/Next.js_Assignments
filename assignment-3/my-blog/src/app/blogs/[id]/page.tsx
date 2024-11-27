@@ -31,8 +31,11 @@ interface BlogPostParams {
 async function BlogPost( { params }: BlogPostParams) {
   const  { id } = params;
 
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/_data/blogData.json`);
+  const res = await fetch(` https://blog-zeta-one-76.vercel.app/_data/blogData.json`);
   const blogs = await res.json();
+
+  console.log(blogs)
+
   // Finding the blog by ID
   let blog: Blog | undefined;
   for (const category in blogs) {
@@ -53,7 +56,7 @@ async function BlogPost( { params }: BlogPostParams) {
             <Image
               src={blog.image}
               alt={blog.title}
-              className=" h-[300px] w-[900px] md:h-[400px] lg:h-[500px]  shadow-md mb-6 object-cover mx-auto"/>
+              className=" h-[300px] w-[900px] md:h-[400px] lg:h-[500px]  shadow-md mb-6 object-cover mx-auto" width={500} height={100}/>
 
             <h1 className="text-3xl font-bold mb-4 text-gray-800 text-center  my-4 lg:mt-2"> {blog.title}</h1>
             <p className="text-md text-gray-600 lg:w-[90%] mx-auto leading-relaxed"> {blog.description} </p>
@@ -102,6 +105,7 @@ async function BlogPost( { params }: BlogPostParams) {
                   src="/newsletter.jpg"
                   alt="Delicious Food"
                   className="w-full h-[250px] object-cover"
+                  width={200} height={100}
                 />
                 <div className="p-2 text-white">
                   <h2 className="text-2xl font-bold mb-4 text-center "> Delicious Recipes & More! </h2>
@@ -139,6 +143,7 @@ async function BlogPost( { params }: BlogPostParams) {
               src={blog.image}
               alt={blog.title}
               className=" h-[300px] w-[900px] md:h-[400px] lg:h-[500px] lg:w-[1000px] shadow-md mb-6 lg:mb-10 object-cover mx-auto"
+              width={500} height={100}
             />
 
             <h1 className="text-3xl font-bold mb-4 text-gray-800 lg:ml-[5%]  my-4 lg:mt-[3%] ">
@@ -164,9 +169,10 @@ async function BlogPost( { params }: BlogPostParams) {
                     <div className="block lg:flex gap-6 lg:ml-[3%]">
                       <div className="lg:w-1/2">
                         <Image
-                          src={`blog.images?.[index]`}
+                          src={ `${blog.images?.[index]}`}
                           alt="img"
                           className="w-full h-auto lg:w-[500px] lg:h-[300px] rounded-lg shadow-lg object-cover"
+                          width={500} height={100}
                         />
                       </div>
                       <div className="lg:w-[40%]">
