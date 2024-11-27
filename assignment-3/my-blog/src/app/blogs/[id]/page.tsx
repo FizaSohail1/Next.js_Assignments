@@ -3,26 +3,38 @@ import Navbar from "@/app/components/Navbar/page";
 import Comments from "@/app/components/comments/page";
 import Image from "next/image";
 
+
+interface Step {
+  type: "heading" | "step";
+  content: string;
+}
+
 interface Blog {
   id: string;
   title: string;
   image: string;
   description: string;
   ingredients?: string[];
-  steps?: any;
+  steps?: Step[];
   suggestions?: string;
   subheadings?: string[];
   contents?: string[];
   images?: [];
 }
 
-async function BlogPost( params : { id: string } ) {
-  const id =  params.id;
+interface BlogPostParams {
+  params: {
+    id: string;
+  };
+}
+
+async function BlogPost( { params }: BlogPostParams) {
+  const  { id } = params;
 
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/_data/blogData.json`);
   const blogs = await res.json();
   // Finding the blog by ID
-  let blog: Blog;
+  let blog: Blog | undefined;
   for (const category in blogs) {
     blog = blogs[category].find((post: Blog) => post.id === id);
     if (blog) break;
