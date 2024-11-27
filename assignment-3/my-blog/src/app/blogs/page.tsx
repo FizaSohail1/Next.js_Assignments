@@ -33,7 +33,7 @@ function Blog() {
         id: 3,
         title: "Nihari",
         image: "/traditional-3.jpg",
-        description:"it's a tradition deeply rooted in Pakistan's culinary culture. Known for its rich, spicy.",
+        description:"its a tradition deeply rooted in Pakistans culinary culture. Known for its rich, spicy.",
       },
     ],
     FastFood: [
@@ -94,7 +94,7 @@ function Blog() {
       id: "12",
       title: "Top 3 Traditional Pakistani Foods You Must Try",
       image: "/street-food.jpg",
-      description: "Pakistani cuisine is a flavorful journey of rich spices, aromatic herbs, and vibrant colors, reflecting the country's diverse culture and traditions.",
+      description: "Pakistani cuisine is a flavorful journey of rich spices, aromatic herbs, and vibrant colors, reflecting the country diverse culture and traditions.",
     },
   ];
 
@@ -136,21 +136,21 @@ function Blog() {
       <div className="md:mx-16 lg:mx-32 mx-5">
         <div className="flex justify-center  mt-10">
           <div className="bg-gray-200 h-[500px] w-[300px] lg:w-[400px] mx-1 md:mx-4">
-            <img
+            <Image
               src={"/blogmain.jpg"}
               alt="main1"
               className="h-[500px] w-full object-cover"
             />
           </div>
           <div className="bg-gray-200 h-[430px] w-[300px] my-10 mx-1 md:mx-4">
-            <img
+            <Image
               src="/blog-2.jpg"
               alt="main2"
               className="h-[430px] object-cover"
             />
           </div>
           <div className="bg-gray-200 h-[500px] w-[300px] lg:w-[400px] mx-1 md:mx-4">
-            <img
+            <Image
               src={"/blog-1.jpg"}
               alt="main1"
               className="h-[500px] w-full object-cover"

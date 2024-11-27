@@ -42,7 +42,7 @@ async function BlogPost({ params }: BlogPostParams) {
       <div className="md:mx-16 lg:mx-28 mx-5 mt-5">
         {parseInt(blog.id) >= 1 && parseInt(blog.id) < 10 && (
           <div>
-            <img
+            <Image
               src={blog.image}
               alt={blog.title}
               className=" h-[300px] w-[900px] md:h-[400px] lg:h-[500px]  shadow-md mb-6 object-cover mx-auto"/>
@@ -71,7 +71,7 @@ async function BlogPost({ params }: BlogPostParams) {
                   Step-by-Step Instructions:
                 </h2>
                 <ol className="list-decimal list-inside space-y-4">
-                  {blog.steps?.map((item:any, index:any) => {
+                  {blog.steps?.map((item, index) => {
                     if (item.type === "heading") {
                       return (
                         <li key={index} className="text-xl font-bold text-gray-700 mt-6 list-decimal list-inside"> 
@@ -90,7 +90,7 @@ async function BlogPost({ params }: BlogPostParams) {
               </div>
 
               <div className="bg-black h-auto w-auto shadow-lg rounded-lg overflow-hidden px-4 lg:mt-[75px] mb-5">
-                <img
+                <Image
                   src="/newsletter.jpg"
                   alt="Delicious Food"
                   className="w-full h-[250px] object-cover"
@@ -155,8 +155,8 @@ async function BlogPost({ params }: BlogPostParams) {
                   <div key={index} className="my-6">
                     <div className="block lg:flex gap-6 lg:ml-[3%]">
                       <div className="lg:w-1/2">
-                        <img
-                          src={blog.images?.[index]}
+                        <Image
+                          src={`blog.images?.[index]`}
                           alt="img"
                           className="w-full h-auto lg:w-[500px] lg:h-[300px] rounded-lg shadow-lg object-cover"
                         />

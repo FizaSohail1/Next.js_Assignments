@@ -107,7 +107,7 @@ export default function Home() {
         { title: "Sweets & Desserts", image: "/sweet-1.jpg", description: " Indulge in the sweetness of traditional Pakistani desserts."}
       ].map((category) => (
         <div className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
-        <img src={category.image} alt="Traditional Dishes" className="w-full h-[200px] object-cover" />
+        <Image src={category.image} alt="Traditional Dishes" className="w-full h-[200px] object-cover" />
         <div className="p-4">
           <h3 className="text-xl font-semibold mb-2">{category.title}</h3>
           <p className="text-gray-600 text-sm">
@@ -147,7 +147,7 @@ export default function Home() {
           { id:"12", title: "Top 3 Traditional Pakistani Foods You Must Try", image: "/street-food.jpg", description: "Pakistani cuisine is a flavorful journey of rich spices, aromatic herbs, and vibrant colors."},
         ].map((item) => (
           <div className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105  lg:w-[350px] ">
-        <img src={item.image} alt="Organic and Healthy" className="w-full h-[130px] object-cover" />
+        <Image src={item.image} alt="Organic and Healthy" className="w-full h-[130px] object-cover" />
         <div className="p-4">
           <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
           <p className="text-gray-600 text-sm">
