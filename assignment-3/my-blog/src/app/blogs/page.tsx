@@ -122,11 +122,11 @@ function Blog() {
     },
   ];
    type BlogCategory = "traditional" | "FastFood" | "desserts";
-
+ 
   const [selectedCategory, setSelectedCategory] =
     useState<BlogCategory>("traditional");
   // Handle category change
-  const handleCategoryChange = (category: any) => {
+  const handleCategoryChange = (category: BlogCategory) => {
     setSelectedCategory(category);
   };
 

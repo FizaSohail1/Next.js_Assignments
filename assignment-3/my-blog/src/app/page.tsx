@@ -102,11 +102,11 @@ export default function Home() {
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
     {
       [
-        { title: "Traditional Dishes",image:"/food-2.jpg", description:"Discover the authentic flavors of traditional Pakistani cuisine."},
-        { title: "Snack and Sizzle", image: "/snack-1.jfif", description: " Explore popular street snacks that are a part of everyday life."},
-        { title: "Sweets & Desserts", image: "/sweet-1.jpg", description: " Indulge in the sweetness of traditional Pakistani desserts."}
+        { id:'1' , title: "Traditional Dishes",image:"/food-2.jpg", description:"Discover the authentic flavors of traditional Pakistani cuisine."},
+        { id: "2", title: "Snack and Sizzle", image: "/snack-1.jfif", description: " Explore popular street snacks that are a part of everyday life."},
+        { id: "3", title: "Sweets & Desserts", image: "/sweet-1.jpg", description: " Indulge in the sweetness of traditional Pakistani desserts."}
       ].map((category) => (
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+        <div key={category.id} className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
         <Image src={category.image} alt="Traditional Dishes" className="w-full h-[200px] object-cover" />
         <div className="p-4">
           <h3 className="text-xl font-semibold mb-2">{category.title}</h3>
@@ -133,9 +133,9 @@ export default function Home() {
       <p className="text-md text-gray-600 lg:w-[80%]">
         From the Heart of Pakistan: A Taste of Tradition and Heritage where flavors come alive! Explore authentic recipes, discover culinary secrets, and embark on a delicious journey through the world of traditional and modern Pakistani cuisine.
         <br/><br/>
-        Welcome to a celebration of Pakistan's rich culinary heritage! Here, we dive into the flavors, aromas, and stories behind each dish—from traditional favorites passed down through generations to modern twists that bring new life to classic recipes. Whether you are craving spicy street foods, indulgent sweets, or regional specialties that showcase the diversity of Pakistani culture, you will find inspiration and authentic flavors in every post. Join us as we explore the tastes that make Pakistans cuisine so unique and beloved around the world.
+        Welcome to a celebration of Pakistans rich culinary heritage! Here, we dive into the flavors, aromas, and stories behind each dish—from traditional favorites passed down through generations to modern twists that bring new life to classic recipes. Whether you are craving spicy street foods, indulgent sweets, or regional specialties that showcase the diversity of Pakistani culture, you will find inspiration and authentic flavors in every post. Join us as we explore the tastes that make Pakistans cuisine so unique and beloved around the world.
         <br/><br/>
-         Join us on a delicious journey through Pakistan's food culture, where each dish is a testament to the warmth, hospitality, and history of the people who created it. Whether you are seeking inspiration for an authentic Pakistani feast or curious about the stories behind each ingredient, this site is here to guide you. Lets dive into the tastes, textures, and traditions that make Pakistani cuisine truly unforgettable.
+         Join us on a delicious journey through Pakistans food culture, where each dish is a testament to the warmth, hospitality, and history of the people who created it. Whether you are seeking inspiration for an authentic Pakistani feast or curious about the stories behind each ingredient, this site is here to guide you. Lets dive into the tastes, textures, and traditions that make Pakistani cuisine truly unforgettable.
       </p>
     </div>
 
@@ -146,7 +146,7 @@ export default function Home() {
           { id:"11", title: "Health Benefits of Pakistani Cuisine", image: "/healthy-food.jpg", description: "Pakistani cuisine is rich in flavor, diversity, and culture, offering a wide variety of dishes"},
           { id:"12", title: "Top 3 Traditional Pakistani Foods You Must Try", image: "/street-food.jpg", description: "Pakistani cuisine is a flavorful journey of rich spices, aromatic herbs, and vibrant colors."},
         ].map((item) => (
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105  lg:w-[350px] ">
+          <div key={item.id} className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105  lg:w-[350px] ">
         <Image src={item.image} alt="Organic and Healthy" className="w-full h-[130px] object-cover" />
         <div className="p-4">
           <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
