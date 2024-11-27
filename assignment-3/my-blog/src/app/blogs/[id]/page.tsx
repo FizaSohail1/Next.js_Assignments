@@ -21,7 +21,7 @@ interface BlogPostParams {
 }
 
 async function BlogPost({ params }: BlogPostParams) {
-  const id = await params.id;
+  const id =  params.id;
 
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/_data/blogData.json`);
   const blogs = await res.json();
