@@ -59,12 +59,12 @@ function Comments() {
       </button>
       <div className="mt-6">
         {comments.map((comment) => (
-          <div key={comment.id} className="p-3 mb-2 bg-white border rounded-lg flex justify-between">
+          <div key={comment.id} className="p-3 mb-2 bg-white border rounded-lg flex flex-col md:flex-row justify-between">
                 <div>
                 <p className="text-gray-800">{comment.text}</p>
                 <p className="text-gray-500 text-sm">Posted on: {comment.date}</p>
               </div>
-            <button  onClick={() => deleteComment(comment.id)} className="bg-red-500 hover:bg-red-600 text-white font-medium py-1 px-2 rounded-md">Delete</button>
+            <button  onClick={() => deleteComment(comment.id)} className="bg-red-500 hover:bg-red-600 text-white font-medium py-1 px-2 rounded-md my-2">Delete</button>
           </div>
         ))}
       </div>

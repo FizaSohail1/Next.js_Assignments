@@ -31,8 +31,8 @@ function Navbar() {
           </ul>
         </div>
 
-        <div className="logo bg-white w-64 md:w-96 h-12 md:h-16 border-black border-solid border-[3px] mt-5 ">
-          <h1 className={`${irishGrover.className} text-center text-[24px] md:text-[36px] `}>
+        <div className="logo bg-white w-[260px] md:w-96 h-10  justify-center md:h-16 border-black border-solid border-[3px] mt-5 ">
+          <h1 className={`${irishGrover.className} text-center text-base md:text-[34px] lg:p-3 `}>
             The Foodies Journal
           </h1>
         </div>

@@ -31,7 +31,7 @@ interface BlogPostParams {
 async function BlogPost( { params }: BlogPostParams) {
   const  { id } = params;
 
-  const res = await fetch(` https://blog-zeta-one-76.vercel.app/_data/blogData.json`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/_data/blogData.json`);
   const blogs = await res.json();
 
   console.log(blogs)
